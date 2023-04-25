@@ -11,6 +11,7 @@ Spring:
     redis:
       repositories:
         enabled: 'true'
+        type: 'none'
 test:
   topic: test_topic
 server:
