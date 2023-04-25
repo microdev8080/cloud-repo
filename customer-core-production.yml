@@ -10,7 +10,7 @@ Spring:
   data:
     redis:
       repositories:
-        enabled: 'false'
+        enabled: 'true'
 test:
   topic: test_topic
 server:
