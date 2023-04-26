@@ -1,6 +1,6 @@
 spring:
   application:
-    name: audtor
+    name: auditor
   datasource:
     hikari:
       connectionTimeout: 20000
