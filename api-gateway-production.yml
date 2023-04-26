@@ -35,8 +35,6 @@ spring:
           jwk-set-uri: ${app.config.keycloak.url}/realms/${app.config.keycloak.realm}/protocol/openid-connect/certs
   ##GATEWAY CONFIGURATIONS
   cloud:
-    config:
-      enabled: false
     gateway:
       routes:
         ## Customer service
@@ -57,4 +55,4 @@ spring:
 eureka:
   client:
     service-url:
-      defaultZone: http://eureka-server:8761/eureka
+      defaultZone: http://eureka-server:8761/eureka/
