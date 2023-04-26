@@ -8,8 +8,8 @@ spring:
 app:
   config:
     keycloak:
-      auth-url: http://keycloak:28080/auth/realms/micro-dev/protocol/openid-connect/token
-      logout-url: http://keycloak:28080/auth/realms/micro-dev/protocol/openid-connect/logout
+      auth-url: http://keycloak:8080/auth/realms/micro-dev/protocol/openid-connect/token
+      logout-url: http://keycloak:8080/auth/realms/micro-dev/protocol/openid-connect/logout
       realm: micro-dev
       client-id: micro-dev-client
       client-secret: Zg2QXXWliYwiCQTPPDDYImHYkRbNdlEf
