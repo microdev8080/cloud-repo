@@ -17,7 +17,7 @@ spring:
     consumer:
       auto-offset-reset: earliest
       group-id: test-kafka-cluster
-    bootstrap-servers: kafka:9095
+      bootstrap-servers: kafka:9092
 test:
   topic: audit-topic
 eureka:
