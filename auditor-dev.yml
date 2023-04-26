@@ -19,7 +19,7 @@ spring:
       group-id: test-kafka-cluster
       bootstrap-servers: localhost:9092
 test:
-  topic: audit-topic
+  topic: test_topic
 eureka:
   client:
     serviceUrl:
