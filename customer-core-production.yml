@@ -1,6 +1,6 @@
 Spring:
   kafka:
-    consumer:
+    producer:
       auto-offset-reset: earliest
       group-id: test-kafka-cluster
       bootstrap-servers: kafka:9092
