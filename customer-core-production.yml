@@ -6,12 +6,11 @@ Spring:
       group-id: test-kafka-cluster
   redis:
     host: redis
-    port: '6380'
+    port: '6379'
   data:
     redis:
       repositories:
-        enabled: 'false'
-        type: 'none'
+        enabled: 'true'
 test:
   topic: test_topic
 server:
