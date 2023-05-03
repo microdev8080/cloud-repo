@@ -1,6 +1,9 @@
 server:
   port: 9097
 spring:
+  cloud:
+    discovery:
+      enabled: 'false'
   application:
     name: auditor
   datasource:
