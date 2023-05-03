@@ -2,6 +2,9 @@ server:
   port: 9095
 
 spring:
+  cloud:
+    discovery:
+      enabled: 'false'
   application:
     name: auth-service
 
