@@ -7,10 +7,7 @@ app:
 server:
   port: 9099
 spring:
-  cloud:
-    discovery:
-      enabled: 'false'
-  main :
+  main:
     web-application-type: reactive
   application:
     name: api-gateway
@@ -38,6 +35,8 @@ spring:
           jwk-set-uri: ${app.config.keycloak.url}/realms/${app.config.keycloak.realm}/protocol/openid-connect/certs
   ##GATEWAY CONFIGURATIONS
   cloud:
+    discovery:
+      enabled: "false"
     gateway:
       routes:
         ## Customer service
