@@ -7,6 +7,9 @@ app:
 server:
   port: 9099
 spring:
+  cloud:
+    discovery:
+      enabled: 'false'
   main :
     web-application-type: reactive
   application:
