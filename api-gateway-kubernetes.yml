@@ -35,9 +35,13 @@ spring:
           jwk-set-uri: ${app.config.keycloak.url}/realms/${app.config.keycloak.realm}/protocol/openid-connect/certs
   ##GATEWAY CONFIGURATIONS
   cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true
     kubernetes:
       enabled: true
-    eureka:
+    discovery:
       enabled: false
     gateway:
       routes:
