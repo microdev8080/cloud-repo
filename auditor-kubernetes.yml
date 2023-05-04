@@ -1,6 +1,11 @@
 server:
   port: 9097
 spring:
+  cloud:
+    kubernetes:
+      enabled: true
+    eureka:
+      enabled: false
   application:
     name: auditor
   datasource:

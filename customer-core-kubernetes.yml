@@ -1,4 +1,9 @@
 Spring:
+  cloud:
+    kubernetes:
+      enabled: true
+    eureka:
+      enabled: false
   kafka:
     producer:
       auto-offset-reset: earliest
