@@ -38,7 +38,7 @@ spring:
     kubernetes:
       enabled: true
     discovery:
-      enabled: false
+      enabled: true
     gateway:
       discovery:
         locator:
