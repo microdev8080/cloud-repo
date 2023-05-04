@@ -38,11 +38,8 @@ spring:
     kubernetes:
       enabled: true
     discovery:
-      enabled: true
+      enabled: false
     gateway:
-      discovery:
-        locator:
-          enabled: true
       routes:
         ## Customer service
         - id: customer-service
