@@ -36,6 +36,8 @@ spring:
   ##GATEWAY CONFIGURATIONS
   cloud:
     kubernetes:
+      loadbalancer:
+        mode: service
       enabled: true
     discovery:
       enabled: false
