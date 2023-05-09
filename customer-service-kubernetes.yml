@@ -4,12 +4,11 @@ spring:
       loadbalancer:
         mode: service
       enabled: true
-    discovery:
-      enabled: false
 server:
   port: "8082"
 eureka:
   client:
+    enabled: false
     serviceUrl:
       defaultZone: http://eureka-server:8761/eureka/
 

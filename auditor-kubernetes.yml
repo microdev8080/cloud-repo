@@ -4,8 +4,6 @@ spring:
   cloud:
     kubernetes:
       enabled: true
-    discovery:
-      enabled: false
   application:
     name: auditor
   datasource:
@@ -27,6 +25,7 @@ test:
   topic: test_topic
 eureka:
   client:
+    enabled: false
     serviceUrl:
       defaultZone: http://eureka-server:8761/eureka/
 

@@ -39,8 +39,6 @@ spring:
       loadbalancer:
         mode: service
       enabled: true
-    discovery:
-      enabled: false
     gateway:
       routes:
         ## Customer service
@@ -60,6 +58,7 @@ spring:
 
 eureka:
   client:
+    enabled: false
     service-url:
       defaultZone: http://eureka-server:8761/eureka/
 
