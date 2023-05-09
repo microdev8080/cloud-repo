@@ -4,6 +4,8 @@ server:
 spring:
   cloud:
     kubernetes:
+      discovery:
+        include-external-name-services: true
       enabled: true
   application:
     name: auth-service
