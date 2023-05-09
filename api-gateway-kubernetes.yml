@@ -37,7 +37,8 @@ spring:
   cloud:
     kubernetes:
       discovery:
-        discovery-server-url: http://spring-cloud-kubernetes-discoveryserver.default.svc.cluster.local
+        include-not-ready-addresses: true
+        all-namespaces: true
         enabled: true
       loadbalancer:
         mode: service
