@@ -36,6 +36,8 @@ spring:
   ##GATEWAY CONFIGURATIONS
   cloud:
     kubernetes:
+      reload:
+        enabled: true
       discovery:
         include-not-ready-addresses: true
         all-namespaces: true
