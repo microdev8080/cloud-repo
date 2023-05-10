@@ -5,7 +5,7 @@ spring:
   cloud:
     kubernetes:
       discovery:
-        discovery-server-url: http://spring-cloud-kubernetes-discoveryserver:8761
+        discovery-server-url: https://spring-cloud-kubernetes-discoveryserver:8761
       enabled: true
       reload:
         enabled: true

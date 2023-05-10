@@ -36,7 +36,7 @@ spring:
   ##GATEWAY CONFIGURATIONS
   cloud:
     discovery:
-      discovery-server-url: http://spring-cloud-kubernetes-discoveryserver:8761
+      discovery-server-url: https://spring-cloud-kubernetes-discoveryserver:8761
     kubernetes:
       reload:
         enabled: true
