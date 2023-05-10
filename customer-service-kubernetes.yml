@@ -1,8 +1,8 @@
 spring:
   cloud:
     kubernetes:
-      loadbalancer:
-        mode: service
+      discovery:
+        discovery-server-url: https://spring-cloud-kubernetes-discoveryserver:8761
       enabled: true
 server:
   port: "8082"

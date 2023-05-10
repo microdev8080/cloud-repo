@@ -1,6 +1,8 @@
 Spring:
   cloud:
     kubernetes:
+      discovery:
+        discovery-server-url: https://spring-cloud-kubernetes-discoveryserver:8761
       enabled: true
   kafka:
     producer:
