@@ -38,14 +38,12 @@ spring:
     kubernetes:
       reload:
         enabled: true
-      discovery:
-        include-not-ready-addresses: true
-        all-namespaces: true
-        enabled: true
-      loadbalancer:
-        mode: service
       enabled: true
     gateway:
+      discovery:
+        locator:
+          lowerCaseServiceId: true
+          enabled: true
       routes:
         ## Customer service
         - id: customer-service
