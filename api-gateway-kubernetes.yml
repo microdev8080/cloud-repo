@@ -35,9 +35,9 @@ spring:
           jwk-set-uri: ${app.config.keycloak.url}/realms/${app.config.keycloak.realm}/protocol/openid-connect/certs
   ##GATEWAY CONFIGURATIONS
   cloud:
-    discovery:
-      discovery-server-url: https://spring-cloud-kubernetes-discoveryserver:8761
     kubernetes:
+      discovery:
+        discovery-server-url: https://spring-cloud-kubernetes-discoveryserver:8761
       reload:
         enabled: true
       enabled: true
