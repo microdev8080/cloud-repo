@@ -1,4 +1,4 @@
-customer-core-url: http://customer-service.default.svc.cluster.local:8083
+customer-core-url: http://customer-core.default.svc.cluster.local:8083
 spring:
   cloud:
     kubernetes:
