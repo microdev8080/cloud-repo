@@ -5,6 +5,10 @@ spring:
     kubernetes:
       loadbalancer:
         mode: SERVICE
+      discovery:
+        discovery-server-url: https://spring-cloud-kubernetes-discoveryserver:8761
+      reload:
+        enabled: true
       enabled: true
   application:
     name: auditor
