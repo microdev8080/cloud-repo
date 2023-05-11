@@ -51,7 +51,7 @@ spring:
       routes:
         ## Customer service
         - id: customer-service
-          uri: lb://customer-service
+          uri: http://customer-service:8082
           predicates:
             - Path=/customer-service/**
           filters:
