@@ -4,9 +4,13 @@ server:
 spring:
   cloud:
     kubernetes:
-      enabled: false
+      loadbalancer:
+        mode: SERVICE
+      discovery:
+        discovery-server-url: https://spring-cloud-kubernetes-discoveryserver:8761
+      enabled: true
       reload:
-        enabled: false
+        enabled: true
   application:
     name: auth-service
 

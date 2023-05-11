@@ -1,13 +1,11 @@
 spring:
   cloud:
     kubernetes:
-      # loadbalancer:
-      #   mode: SERVICE
-      # discovery:
-      #   discovery-server-url: https://spring-cloud-kubernetes-discoveryserver:8761
-      enabled: false
-      reload:
-        enabled: false
+      loadbalancer:
+        mode: SERVICE
+      discovery:
+        discovery-server-url: https://spring-cloud-kubernetes-discoveryserver:8761
+      enabled: true
 server:
   port: "8082"
 eureka:

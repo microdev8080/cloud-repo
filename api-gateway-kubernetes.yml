@@ -36,29 +36,33 @@ spring:
   ##GATEWAY CONFIGURATIONS
   cloud:
     kubernetes:
+      loadbalancer:
+        mode: SERVICE
+      discovery:
+        discovery-server-url: https://spring-cloud-kubernetes-discoveryserver:8761
       reload:
-        enabled: false
-      enabled: false
+        enabled: true
+      enabled: true
     gateway:
       discovery:
         locator:
           lowerCaseServiceId: true
           enabled: true
-      # routes:
-      #   ## Customer service
-      #   - id: customer-service
-      #     uri: lb://customer-service
-      #     predicates:
-      #       - Path=/customer-service/**
-      #     filters:
-      #       - StripPrefix=1
-      #   ## Auth service
-      #   - id: auth-service
-      #     uri: lb://auth-service
-      #     predicates:
-      #       - Path=/auth-service/**
-      #     filters:
-      #       - StripPrefix=1
+      routes:
+        ## Customer service
+        - id: customer-service
+          uri: lb://customer-service
+          predicates:
+            - Path=/customer-service/**
+          filters:
+            - StripPrefix=1
+        ## Auth service
+        - id: auth-service
+          uri: lb://auth-service
+          predicates:
+            - Path=/auth-service/**
+          filters:
+            - StripPrefix=1
 
 eureka:
   client:

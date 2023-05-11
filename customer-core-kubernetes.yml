@@ -1,11 +1,11 @@
 Spring:
   cloud:
     kubernetes:
+      loadbalancer:
+        mode: SERVICE
       discovery:
         discovery-server-url: https://spring-cloud-kubernetes-discoveryserver:8761
-      enabled: false
-      reload:
-        enabled: false
+      enabled: true
   kafka:
     producer:
       auto-offset-reset: earliest
