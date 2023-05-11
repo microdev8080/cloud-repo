@@ -3,9 +3,9 @@ server:
 spring:
   cloud:
     kubernetes:
-      loadbalancer:
-        mode: SERVICE
-      enabled: true
+      enabled: false
+      reload:
+        enabled: false
   application:
     name: auditor
   datasource:
