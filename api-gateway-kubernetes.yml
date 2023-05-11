@@ -48,21 +48,21 @@ spring:
         locator:
           lowerCaseServiceId: true
           enabled: true
-      # routes:
-      #   ## Customer service
-      #   - id: customer-service
-      #     uri: lb://customer-service
-      #     predicates:
-      #       - Path=/customer-service/**
-      #     filters:
-      #       - StripPrefix=1
-      #   ## Auth service
-      #   - id: auth-service
-      #     uri: lb://auth-service
-      #     predicates:
-      #       - Path=/auth-service/**
-      #     filters:
-      #       - StripPrefix=1
+      routes:
+        ## Customer service
+        - id: customer-service
+          uri: lb://customer-service
+          predicates:
+            - Path=/customer-service/**
+          filters:
+            - StripPrefix=1
+        ## Auth service
+        - id: auth-service
+          uri: lb://auth-service
+          predicates:
+            - Path=/auth-service/**
+          filters:
+            - StripPrefix=1
 
 eureka:
   client:
