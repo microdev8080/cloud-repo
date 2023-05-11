@@ -3,6 +3,8 @@ server:
 spring:
   cloud:
     kubernetes:
+    loadbalancer:
+      mode: SERVICE
       enabled: true
   application:
     name: auditor
